@@ -9,6 +9,6 @@ frame_document.getElementsByName('ztpj')[0].setAttribute('checked', true);
 frame_document.getElementsByName('jssj')[0].setAttribute('checked', true);
 frame_document.getElementsByName('jssk')[0].setAttribute('checked', true);
 frame_document.getElementsByName('jszd')[0].setAttribute('checked', true);
-frame_document.getElementsByName('kfswt')[0].value = "非常好！";
+frame_document.getElementsByName('kfswt')[0].value = '非常好！';
 frame_document.getElementsByName('Submit')[0].click();
 }());

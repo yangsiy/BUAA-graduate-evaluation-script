@@ -1,11 +1,11 @@
 javascript:void(function(){
 
 function evaluate_single(a_list, index, callback) {
-	while (index < a_list.length && a_list[index].innerHTML != "评教") {
+	while (index < a_list.length && a_list[index].innerHTML != '评教') {
 		index++;
 	}
 	if (index == a_list.length) {
-		alert("Evaluate Successfully!");
+		alert('Evaluate Successfully!');
 		window.location.reload();
 		return;
 	}
@@ -22,12 +22,12 @@ function evaluate_single(a_list, index, callback) {
 			frame_document.getElementsByName('jssj')[0].setAttribute('checked', true);
 			frame_document.getElementsByName('jssk')[0].setAttribute('checked', true);
 			frame_document.getElementsByName('jszd')[0].setAttribute('checked', true);
-			frame_document.getElementsByName('kfswt')[0].value = "非常好！";
+			frame_document.getElementsByName('kfswt')[0].value = '非常好！';
 			frame_document.getElementsByName('Submit')[0].click();
 		}
 		_callback = callback;
 		_index = index + 1;
-		setTimeout("_callback(a_list, _index, _callback)", 100);
+		setTimeout('_callback(a_list, _index, _callback)', 100);
 	}
 }
 
