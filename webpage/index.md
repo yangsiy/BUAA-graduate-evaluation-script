@@ -8,7 +8,7 @@
 
 ##Install 安装
 
-1. 使用 `Command` + `Shift` + `B` 快捷键，显示Chrome浏览器中书签栏
+1. 使用 `Ctrl`+`Shift`+`B` (Mac: `Command`+`Shift`+`B`) 快捷键，显示Chrome浏览器中书签栏
 	
 	![](static_files/screenshot-1.png)
 
