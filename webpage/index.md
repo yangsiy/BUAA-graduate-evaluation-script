@@ -1,4 +1,4 @@
-#研究生自动评教脚本
+#北航研究生自动评教脚本
 
 一次点击完成所有老师评教
 
@@ -12,11 +12,12 @@
 	
 	![](static_files/screenshot-1.png)
 
-2. 将下面按钮拖拽至书签栏，完成安装
+2. 将下面的紫色按钮拖拽至书签栏，完成安装
+	
+	<a class="button button-royal button-rounded" href="">自动评教</a> 
+	<em style="font-size:13px;color:gray">将此按钮拖拽至书签栏，点击无效</em>
 	
 	![](static_files/screenshot-2.png)
-	
-	<a href="">自动评教</a>
 
 ##Use 使用
 
@@ -30,8 +31,8 @@
 
 **由于网络状态原因，可能有部分老师未评价成功，此时重新运行一次脚本即可。**
 
-> Siyu Yang (yangsiyu1992[at]gmail.com)
-> 
-> http://github.com
+> Siyu Yang<br>yangsiyu1992[at]gmail.com
 
 <script type="text/javascript" src="static_files/index.js"></script>
+
+<link rel="stylesheet" type="text/css" href="static_files/buttons.css">

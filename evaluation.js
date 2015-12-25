@@ -5,8 +5,10 @@ function evaluate_single(a_list, index, callback) {
 		index++;
 	}
 	if (index == a_list.length) {
-		alert('Evaluate Successfully!');
-		window.location.reload();
+		if (has_evaluate) {
+			alert('Evaluate Successfully!');
+			window.location.reload();
+		}
 		return;
 	}
 	frame = document.getElementsByTagName('iframe')[0];
@@ -24,6 +26,7 @@ function evaluate_single(a_list, index, callback) {
 			frame_document.getElementsByName('jszd')[0].setAttribute('checked', true);
 			frame_document.getElementsByName('kfswt')[0].value = '非常好！';
 			frame_document.getElementsByName('Submit')[0].click();
+			has_evaluate = 1;
 		}
 		_callback = callback;
 		_index = index + 1;
@@ -31,6 +34,7 @@ function evaluate_single(a_list, index, callback) {
 	}
 }
 
+has_evaluate = 0;
 a_list = document.getElementsByTagName('a');
 evaluate_single(a_list, 0, evaluate_single);
 
